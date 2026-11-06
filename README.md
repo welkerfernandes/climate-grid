@@ -1,5 +1,9 @@
 # Climate Grid
 
+[![CI](https://github.com/welkerfernandes/climate-grid/actions/workflows/ci.yml/badge.svg)](https://github.com/welkerfernandes/climate-grid/actions)
+
+![Dashboard preview](docs/dashboard.png)
+
 Equipes de campo precisam traduzir previsões em critérios operacionais explícitos, sem perder a origem dos dados.
 
 Plataforma executável com dashboard responsivo, API autenticada e integração real com **Open-Meteo**.
@@ -90,3 +94,5 @@ A imagem Docker compila o frontend e o motor nativo e j? ativa o componente Go/J
 ## Verificação em navegador
 
 O job `browser` da CI executa fluxos em Chromium, verifica a versão de 390 px e publica capturas como artifact `dashboard-screenshots`. Execute `npm install` em `ui/`, `npx playwright install chromium` e `node ui/smoke.cjs` na raiz com a API em localhost:8000 para repetir.
+
+Consulte o [registro de validação](docs/validation.md) e a [captura mobile](docs/mobile.png).
